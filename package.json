@@ -1,0 +1,43 @@
+{
+  "name": "strdm",
+  "version": "0.1.0",
+  "main": "lib/index.js",
+  "module": "lib/index.mjs",
+  "types": "lib/index.d.ts",
+  "typings": "lib/index.d.ts",
+  "author": "YoneyY <yoneyy@163.com>",
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "import": "./lib/index.mjs",
+      "require": "./lib/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "repository": {
+    "url": "https://github.com/YoneyY/strdm.git",
+    "type": "github"
+  },
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "strdm",
+    "strand",
+    "strands",
+    "string random",
+    "random string",
+    "string-random"
+  ],
+  "scripts": {
+    "dev": "tsc -p tsconfig.json -w",
+    "build": "node scripts/build.js",
+    "prepublishOnly": "yarn build"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.18",
+    "ts-node": "^10.5.0",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {}
+}
