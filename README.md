@@ -9,11 +9,11 @@ Generate random strings
 ## How to installtion?
 
 ```sh
-# yarn
-yarn add bf-wchat -S --registry=https://registry.npmjs.org/
+  # yarn
+  yarn add strdm -S --registry=https://registry.npmjs.org/
 
-# npm
-npm i bf-wchat -S --registry=https://registry.npmjs.org/
+  # npm
+  npm i strdm -S --registry=https://registry.npmjs.org/
 ```
 
 ## How to use?
