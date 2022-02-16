@@ -1,8 +1,4 @@
-<div align="center">
-	<h1>
-    STRDM
-  </h1>
-</div>
+# STRDM
 
 Generate random strings
 
