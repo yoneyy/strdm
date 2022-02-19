@@ -1,6 +1,6 @@
 {
   "name": "strdm",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Generate random string",
   "main": "lib/index.js",
   "module": "lib/index.mjs",
@@ -32,7 +32,7 @@
   ],
   "scripts": {
     "dev": "tsc -p tsconfig.json -w",
-    "build": "node scripts/build.js",
+    "build": "tsc -p tsconfig.json",
     "prepublishOnly": "yarn build"
   },
   "devDependencies": {
