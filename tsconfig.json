@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "module": "CommonJS",
+    "module": "UMD",
     "moduleResolution": "Node",
     "pretty": true,
     "allowJs": false,

@@ -2,7 +2,7 @@
  * @Author: Yoney Y (YuTianyuan)
  * @Date: 2022-02-16 22:39:51
  * @Last Modified by: YoneyY (YuTianyuan)
- * @Last Modified time: 2022-02-17 01:42:24
+ * @Last Modified time: 2022-02-19 19:53:07
  */
 
 const NUMBERS = '0123456789';
@@ -33,7 +33,7 @@ export interface StrdmOptions {
  * ```
  * @returns
  */
-function strdm(length: number = 6, options: StrdmOptions | boolean | string = {}): string {
+export function strdm(length: number = 6, options: StrdmOptions | boolean | string = {}): string {
 
   let size: number = length;
   let chars: string = '';
@@ -55,6 +55,3 @@ function strdm(length: number = 6, options: StrdmOptions | boolean | string = {}
 
   return result;
 };
-
-export default strdm;
-module.exports = strdm;
