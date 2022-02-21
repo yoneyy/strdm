@@ -1,4 +1,4 @@
-const istrdm = require('./lib/index').default;
+const strdm = require('./lib/index').default;
 
-/** @type {istrdm} */
-module.exports = istrdm;
+/** @type {strdm} */
+module.exports = strdm;
