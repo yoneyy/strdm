@@ -1,6 +1,6 @@
 {
   "name": "strdm",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Generate random string",
   "main": "index.js",
   "module": "index.mjs",
