@@ -17,7 +17,7 @@ Generate random strings
 ### CommonJS
 
 ```javascript
-const { strdm } = require('strdm');
+const strdm = require('strdm');
 
 console.log(strdm());          // dZUYsl
 console.log(strdm(32));        // ilq4i3rXe70rz3j4hrpjMKI3jqCDpr0q
@@ -33,7 +33,7 @@ console.log(strdm(32, { symbols: ':;', numbers: false, strings: false }));    //
 ### ESM
 
 ```javascript
-import { strdm } from 'strdm';
+import strdm from 'strdm';
 
 console.log(strdm());          // dZUYsl
 console.log(strdm(32));        // ilq4i3rXe70rz3j4hrpjMKI3jqCDpr0q

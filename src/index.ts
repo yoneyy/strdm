@@ -2,17 +2,19 @@
  * @Author: Yoney Y (YuTianyuan)
  * @Date: 2022-02-16 22:39:51
  * @Last Modified by: YoneyY (YuTianyuan)
- * @Last Modified time: 2022-02-19 19:53:07
+ * @Last Modified time: 2022-02-21 22:54:05
  */
 
 const NUMBERS = '0123456789';
 const SYMBOLS = '~!@#$%^*()_+-=[]{}|;:,./<>?';
 const STRINGS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
 
-export interface StrdmOptions {
-  numbers?: string | boolean;
-  symbols?: string | boolean;
-  strings?: string | boolean;
+declare namespace strdm {
+  interface Options {
+    numbers?: string | boolean;
+    symbols?: string | boolean;
+    strings?: string | boolean;
+  }
 }
 
 /**
@@ -33,7 +35,7 @@ export interface StrdmOptions {
  * ```
  * @returns
  */
-export function strdm(length: number = 6, options: StrdmOptions | boolean | string = {}): string {
+function strdm(length: number = 6, options: strdm.Options | boolean | string = {}): string {
 
   let size: number = length;
   let chars: string = '';
@@ -42,7 +44,7 @@ export function strdm(length: number = 6, options: StrdmOptions | boolean | stri
   if (typeof options === 'boolean' && options === true) chars += (NUMBERS + STRINGS + SYMBOLS);
   else if (typeof options === 'string') chars = options;
   else {
-    let opts: StrdmOptions = <StrdmOptions>options;
+    let opts: strdm.Options = <strdm.Options>options;
     if (opts.numbers !== false) chars += (typeof opts.numbers === 'string') ? opts.numbers : NUMBERS;
     if (opts.strings !== false) chars += (typeof opts.strings === 'string') ? opts.strings : STRINGS;
     if (opts.symbols) chars += (typeof opts.symbols === 'string') ? opts.symbols : SYMBOLS;
@@ -55,3 +57,5 @@ export function strdm(length: number = 6, options: StrdmOptions | boolean | stri
 
   return result;
 };
+
+export default strdm;
