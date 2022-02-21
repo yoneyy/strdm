@@ -1,15 +1,15 @@
 {
   "name": "strdm",
-  "version": "0.2.9",
+  "version": "0.2.10",
   "description": "Generate random string",
   "main": "index.js",
-  "module": "index.mjs",
+  "module": "lib/index.mjs",
   "types": "lib/index.d.ts",
   "author": "YoneyY <yoneyy@163.com>",
   "license": "MIT",
   "exports": {
     ".": {
-      "import": "./index.mjs",
+      "import": "./lib/index.mjs",
       "require": "./index.js"
     },
     "./package.json": "./package.json"
@@ -19,9 +19,7 @@
     "type": "github"
   },
   "files": [
-    "lib",
-    "./index.js",
-    "./index.mjs"
+    "lib"
   ],
   "keywords": [
     "strdm",
